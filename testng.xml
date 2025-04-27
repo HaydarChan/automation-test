@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Gmail Automation Test Suite">
+    <test name="GmailUnreadEmailTest">
+        <classes>
+            <class name="tests.GmailUnreadEmailTest"/>
+        </classes>
+    </test>
+</suite>
