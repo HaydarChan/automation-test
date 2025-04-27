@@ -23,7 +23,7 @@ public class GmailUnreadEmailTest {
     }
 
     @Test
-    public void testLogLastUnreadEmailTitle() {
+    public void testLogFiveUnreadEmailTitles() {
         driver.get("https://mail.google.com/");
 
         try {
@@ -42,15 +42,19 @@ public class GmailUnreadEmailTest {
         }
 
         List<WebElement> unreadEmails = driver.findElements(By.cssSelector("tr.zE"));
-        if (!unreadEmails.isEmpty()) {
-            WebElement lastUnread = unreadEmails.get(unreadEmails.size() - 1);
-            String subject = lastUnread.findElement(By.cssSelector(".bog")).getText();
-            System.out.println("Last unread email subject: " + subject);
+        int maxEmails = Math.min(unreadEmails.size(), 5);
+
+        if (maxEmails > 0) {
+            System.out.println("Subjects of up to 5 unread emails:");
+            for (int i = 0; i < maxEmails; i++) {
+                WebElement email = unreadEmails.get(i);
+                String subject = email.findElement(By.cssSelector(".bog")).getText();
+                System.out.println((i + 1) + ". " + subject);
+            }
         } else {
             System.out.println("No unread emails found.");
         }
     }
-
 
     @AfterMethod
     public void tearDown() {
