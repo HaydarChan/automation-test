@@ -6,7 +6,7 @@
       <class name="tests.GmailUnreadEmailTest">
         <methods>
           <include name="tearDown"/>
-          <include name="testLogLastUnreadEmailTitle"/>
+          <include name="testLogAndDeleteFirstUnreadEmail"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.GmailUnreadEmailTest -->

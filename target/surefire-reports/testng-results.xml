@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-27T22:11:58 ICT" name="Surefire suite" finished-at="2025-04-27T22:12:04 ICT" duration-ms="5849">
+  <suite started-at="2025-04-27T23:23:21 ICT" name="Surefire suite" finished-at="2025-04-27T23:23:31 ICT" duration-ms="9651">
     <groups>
     </groups>
-    <test started-at="2025-04-27T22:11:58 ICT" name="Surefire test" finished-at="2025-04-27T22:12:04 ICT" duration-ms="5849">
+    <test started-at="2025-04-27T23:23:21 ICT" name="Surefire test" finished-at="2025-04-27T23:23:31 ICT" duration-ms="9651">
       <class name="tests.GmailUnreadEmailTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GmailUnreadEmailTest@647fd8ce]" started-at="2025-04-27T22:11:58 ICT" name="setUp" finished-at="2025-04-27T22:12:01 ICT" duration-ms="2692" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GmailUnreadEmailTest@159f197]" started-at="2025-04-27T23:23:21 ICT" name="setUp" finished-at="2025-04-27T23:23:24 ICT" duration-ms="2550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLogFiveUnreadEmailTitles()[pri:0, instance:tests.GmailUnreadEmailTest@647fd8ce]" started-at="2025-04-27T22:12:01 ICT" name="testLogFiveUnreadEmailTitles" finished-at="2025-04-27T22:12:04 ICT" duration-ms="2743" status="PASS">
+        <test-method signature="testLogAndDeleteFirstUnreadEmail()[pri:0, instance:tests.GmailUnreadEmailTest@159f197]" started-at="2025-04-27T23:23:24 ICT" name="testLogAndDeleteFirstUnreadEmail" finished-at="2025-04-27T23:23:31 ICT" duration-ms="6747" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogFiveUnreadEmailTitles -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GmailUnreadEmailTest@647fd8ce]" started-at="2025-04-27T22:12:04 ICT" name="tearDown" finished-at="2025-04-27T22:12:04 ICT" duration-ms="374" status="PASS">
+        </test-method> <!-- testLogAndDeleteFirstUnreadEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GmailUnreadEmailTest@159f197]" started-at="2025-04-27T23:23:31 ICT" name="tearDown" finished-at="2025-04-27T23:23:31 ICT" duration-ms="317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
